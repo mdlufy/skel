@@ -1,0 +1,77 @@
+startup_mode: Fullscreen
+
+background_opacity: 1 
+
+env:
+    TERM: xterm
+    LANG: "en_US.UTF-8"
+
+window:
+    dimensions:
+        columns: 110
+        lines: 35
+
+    padding:
+        x: 0
+        y: 0
+
+    dynamic_padding: false
+
+    decorations: none
+
+    startup_mode: Fullscreen
+
+
+font:
+  normal:
+    family: monospace
+    style: Regular
+
+  bold:
+    family: monospace
+    style: Bold
+
+  italic:
+    family: monospace
+    style: Italic
+
+  bold_italic:
+    family: monospace
+    style: Bold Italic
+
+  size: 11
+
+mouse:
+        hide_when_typing: true
+
+
+scrolling:
+        auto_scroll: false
+        history: 100000
+
+
+live_config_reload: true
+
+
+selection:
+        save_to_clipboard: true
+
+cursor:
+    style:
+        blinking: On
+    blink_interval: 500
+
+key_bindings:
+  - { key: V, mods: Control, action: Paste }
+  - { key: Space, mods: Control, action: ToggleViMode }
+  - { key: J, mods: Super, action: ScrollLineDown }
+  - { key: K, mods: Super, action: ScrollLineUp }
+  - { key: D, mods: Super, action: ScrollHalfPageDown }
+  - { key: U, mods: Super, action: ScrollHalfPageUp }
+
+shell:
+    program: /usr/bin/bash
+    args:
+       - -l
+       - -c
+       - "tmux attach || tmux"

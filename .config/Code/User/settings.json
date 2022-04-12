@@ -1,0 +1,5 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "security.workspace.trust.enabled": false,
+    "explorer.confirmDelete": false
+}
