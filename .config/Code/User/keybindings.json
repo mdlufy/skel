@@ -1,0 +1,33 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+	"key": "ctrl+t ctrl+l",
+	"command": "editor.action.transformToLowercase"
+  },
+  {
+	"key": "ctrl+t ctrl+u",
+	"command": "editor.action.transformToUppercase"
+  },
+  {
+	"key": "ctrl+t ctrl+s",
+	"command": "editor.action.transformToSnakecase"
+  },
+  {
+	"key": "ctrl+t ctrl+m",
+	"command": "editor.action.transformToTitlecase"
+  },
+  {
+	"key": "ctrl+w",
+	"command": "workbench.action.closeActiveEditor"
+  },
+  {
+	"key": "shift+k",
+	"command": "workbench.action.nextEditor",
+	"when": "vim.mode != INSERT"
+  },
+  {
+	"key": "shift+j",
+	"command": "workbench.action.previousEditor",
+	"when": "vim.mode != INSERT"
+  }
+]
