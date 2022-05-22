@@ -23,11 +23,62 @@
   {
 	"key": "shift+k",
 	"command": "workbench.action.nextEditor",
-	"when": "vim.mode != INSERT"
+	"when": "vim.mode != 'Insert'"
   },
   {
 	"key": "shift+j",
 	"command": "workbench.action.previousEditor",
-	"when": "vim.mode != INSERT"
-  }
+	"when": "vim.mode != 'Insert'"
+  },
+	{
+	"key": "alt+m",
+	"command": "notifications.hideToasts",
+	"when": "notificationToastsVisible"
+},
+{
+	"key": "escape",
+	"command": "-notifications.hideToasts",
+	"when": "notificationToastsVisible"
+},
+{
+	"key": "alt+m",
+	"command": "notifications.hideToasts"
+},
+{
+	"key": "ctrl+; k",
+	"command": "workbench.action.openGlobalKeybindings"
+},
+{
+	"key": "ctrl+k ctrl+s",
+	"command": "-workbench.action.openGlobalKeybindings"
+},
+{
+	"key": "ctrl+e",
+	"when": "sideBarFocus",
+	"command": "commands.run",
+	"args": [
+			"workbench.action.toggleSidebarVisibility",
+	]
+},
+{
+	"key": "ctrl+e",
+	"when": "!sideBarFocus && sideBarVisible",
+	"command": "commands.run",
+	"args": [
+			"workbench.action.focusSideBar",
+	]
+},
+{
+	"key": "ctrl+e",
+	"when": "!sideBarFocus && !sideBarVisible",
+	"command": "commands.run",
+	"args": [
+			"workbench.action.toggleSidebarVisibility",
+			"workbench.action.focusSideBar",
+	]
+},
+{
+	"key": "ctrl+e",
+	"command": "-workbench.action.quickOpen"
+}
 ]
