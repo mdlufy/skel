@@ -17,5 +17,7 @@
     "editor.minimap.enabled": false,
     "window.newWindowDimensions": "fullscreen",
     "window.restoreFullscreen": true,
-    "window.openFilesInNewWindow": "default"
+    "window.openFilesInNewWindow": "default",
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false
 }
