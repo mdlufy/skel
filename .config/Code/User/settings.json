@@ -1,23 +1,44 @@
 {
     "workbench.colorTheme": "Atom One Dark",
+
     "security.workspace.trust.enabled": false,
+
     "explorer.confirmDelete": false,
+
     "terminal.integrated.defaultProfile.linux": "bash",
     "workbench.startupEditor": "none",
+    
     "editor.autoClosingBrackets": "never",
+
     "editor.autoClosingDelete": "never",
+
     "editor.autoClosingOvertype": "never",
+
     "editor.autoClosingQuotes": "never",
 
     "editor.fontLigatures": true,
+
     "editor.fontFamily": "Fira Code",
+    
     "editor.fontSize": 15,
-    "editor.tabSize": 2,
+
     "window.menuBarVisibility": "toggle",
+
     "editor.minimap.enabled": false,
+
     "window.newWindowDimensions": "fullscreen",
+
     "window.restoreFullscreen": true,
+    
     "window.openFilesInNewWindow": "default",
+
     "git.autofetch": true,
-    "explorer.confirmDragAndDrop": false
+
+    "explorer.confirmDragAndDrop": false,
+
+    "editor.tabSize": 4,
+
+    "editor.insertSpaces": true,
+
+    "editor.detectIndentation": false
 }
