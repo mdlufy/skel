@@ -1,12 +1,13 @@
 startup_mode: Fullscreen
 
-background_opacity: 1 
 
 env:
     TERM: xterm
     LANG: "en_US.UTF-8"
 
 window:
+    opacity: 1
+
     dimensions:
         columns: 110
         lines: 35
@@ -23,23 +24,10 @@ window:
 
 
 font:
+  size: 14
   normal:
-    family: monospace
-    style: Regular
-
-  bold:
-    family: monospace
-    style: Bold
-
-  italic:
-    family: monospace
-    style: Italic
-
-  bold_italic:
-    family: monospace
-    style: Bold Italic
-
-  size: 11
+    family: 'Fira Code'
+    style: regular
 
 mouse:
         hide_when_typing: true
