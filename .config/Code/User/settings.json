@@ -20,7 +20,7 @@
 
     "editor.fontFamily": "Fira Code",
     
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
 
     "window.menuBarVisibility": "toggle",
 
@@ -64,5 +64,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "diffEditor.ignoreTrimWhitespace": false,
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.dragAndDrop": false,
+    "prettier.tabWidth": 4
 }
