@@ -1,0 +1,137 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+	"key": "ctrl+t ctrl+l",
+	"command": "editor.action.transformToLowercase"
+  },
+  {
+	"key": "ctrl+t ctrl+u",
+	"command": "editor.action.transformToUppercase"
+  },
+  {
+	"key": "ctrl+t ctrl+s",
+	"command": "editor.action.transformToSnakecase"
+  },
+  {
+	"key": "ctrl+t ctrl+m",
+	"command": "editor.action.transformToTitlecase"
+  },
+  {
+	"key": "ctrl+w",
+	"command": "workbench.action.closeActiveEditor"
+  },
+  {
+	"key": "shift+k",
+	"command": "workbench.action.nextEditor",
+	"when": "vim.mode != 'Insert'"
+  },
+  {
+	"key": "shift+j",
+	"command": "workbench.action.previousEditor",
+	"when": "vim.mode != 'Insert'"
+  },
+	{
+	"key": "alt+m",
+	"command": "notifications.hideToasts",
+	"when": "notificationToastsVisible"
+},
+{
+	"key": "escape",
+	"command": "-notifications.hideToasts",
+	"when": "notificationToastsVisible"
+},
+{
+	"key": "alt+m",
+	"command": "notifications.hideToasts"
+},
+{
+	"key": "ctrl+; k",
+	"command": "workbench.action.openGlobalKeybindings"
+},
+{
+	"key": "ctrl+k ctrl+s",
+	"command": "-workbench.action.openGlobalKeybindings"
+},
+{
+	"key": "ctrl+e",
+	"when": "sideBarFocus",
+	"command": "commands.run",
+	"args": [
+			"workbench.action.toggleSidebarVisibility",
+	]
+},
+{
+	"key": "ctrl+e",
+	"when": "!sideBarFocus && sideBarVisible",
+	"command": "commands.run",
+	"args": [
+			"workbench.action.focusSideBar",
+	]
+},
+{
+	"key": "ctrl+e",
+	"when": "!sideBarFocus && !sideBarVisible",
+	"command": "commands.run",
+	"args": [
+			"workbench.action.toggleSidebarVisibility",
+			"workbench.action.focusSideBar",
+	]
+},
+{
+	"key": "ctrl+e",
+	"command": "-workbench.action.quickOpen"
+},
+{
+    "key": "f1",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+},
+{
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+},
+{
+    "key": "ctrl+cmd+f",
+    "command": "workbench.action.toggleFullScreen",
+    "when": "!isIOS"
+},
+{
+    "key": "ctrl+cmd+f",
+    "command": "-workbench.action.toggleFullScreen",
+    "when": "!isIOS"
+},
+{
+    "key": "shift+cmd+i",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+},
+{
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+},
+{
+    "key": "ctrl+shift+o",
+    "command": "editor.action.organizeImports",
+    "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+},
+{
+    "key": "shift+alt+o",
+    "command": "-editor.action.organizeImports",
+    "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+},
+{
+    "key": "ctrl+w",
+    "command": "-workbench.action.switchWindow"
+},
+{
+    "key": "ctrl+tab",
+    "command": "workbench.action.quickSwitchWindow"
+},
+{
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+},
+]

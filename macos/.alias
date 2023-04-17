@@ -1,0 +1,15 @@
+alias ll="ls -l"
+alias la="ls -la"
+alias zathura="zathura --mode=fullscreen"
+alias lo='git log --oneline'
+alias hist="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias st='git status'
+alias br='git branch -v'
+alias gch='git checkout'
+alias ru='trans en:ru -b'
+alias en='trans ru:en -b'
+alias clip='xclip -selection clipboard'
+alias dosbox='flatpak run io.github.dosbox-staging'
+alias killcode='kill -9 $(pgrep Electron)'
+alias killyand='kill -9 $(pgrep Yandex)'
+alias killcisco='kill -9 $(pgrep Cisco)'

@@ -1,0 +1,62 @@
+startup_mode: Fullscreen
+
+
+env:
+    TERM: xterm
+    LANG: "en_US.UTF-8"
+
+window:
+    opacity: 1
+
+    dimensions:
+        columns: 110
+        lines: 35
+
+    padding:
+        x: 5
+        y: 5
+
+    dynamic_padding: false
+
+    decorations: none
+
+    startup_mode: Fullscreen
+
+
+font:
+  size: 16
+
+mouse:
+        hide_when_typing: true
+
+
+scrolling:
+        auto_scroll: false
+        history: 100000
+        multiplier: 3
+
+
+live_config_reload: true
+
+
+selection:
+        save_to_clipboard: true
+
+cursor:
+    style:
+        blinking: On
+    blink_interval: 500
+
+key_bindings:
+  - { key: V, mods: Control, action: Paste }
+  - { key: Space, mods: Control, action: ToggleViMode }
+  - { key: J, mods: Super, action: ScrollLineDown }
+  - { key: K, mods: Super, action: ScrollLineUp }
+  - { key: D, mods: Super, action: ScrollHalfPageDown }
+  - { key: U, mods: Super, action: ScrollHalfPageUp }
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+
+shell:
+    program: /bin/zsh
+    args:
+      - --login
